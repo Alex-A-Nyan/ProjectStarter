@@ -1,0 +1,40 @@
+/* Copyright 2022 valeryje
+ * 
+ * This file contains Original Code created by Alexander Alexanyan
+ * aka valeryje or Valery Jennette or Alex-A-Nyan or alale5.
+ * 
+ * The Original Code and all software developed in the process of
+ * participation on learning by experimental programming educational method.
+ * The whole methodology was developed and distributed by
+ * Autonomous non-profit organization «School 21» (ANO «School 21»). 
+ * 
+ * Redistribution and use of this file, its parts, or entire project
+ * are permitted by confirmation of its original creator.
+ */
+
+/* ==================================================================================================== */
+
+/* ----- LIBRARIES AND DEFINITIONS ----- */
+#include <time.h>
+#include "new.h"
+
+const int i_rows         = 8                         ;
+const int i_columns      = 8                         ;
+const int small_number   = 5                         ;
+int rows_test[8]         = {1, 2, 3, 4, 5, 0, 10, -1};
+int columns_test[8]      = {1, 2, 3, 4, 5, 0, 10, -1};
+int small_size[5]        = {1, 2, 3, 4, 5}           ;
+int printmatr            = 1                         ;
+
+#define OK                 0
+#define ERROR              1
+
+/* ----- TESTS ----- */
+
+#test CREATE
+  int n = 0;
+
+  ck_assert_int_eq(err_lib, err_test);
+  n++;
+
+  printf("\nSUCCESSFULL %3d tests for 'CREATE'", n);
